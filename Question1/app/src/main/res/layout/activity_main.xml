@@ -66,12 +66,25 @@
         android:padding="5dp"
         android:textColor="#ffffff" />
 
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Passwd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:text="Course :"
+        android:textColor="#202020"
+        android:textStyle="bold" />
+
 
     <LinearLayout
         android:id="@+id/LinearL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_Passwd"
+        android:layout_below="@id/tv_course"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
@@ -82,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="BSC IT"
+            android:text="BCA"
             android:textColor="#202020" />
 
         <CheckBox
@@ -91,7 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="BTECH"
+            android:text="BSC IT"
             android:textColor="#202020" />
 
         <CheckBox
@@ -100,16 +113,29 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="BCA"
+            android:text="BTech"
             android:textColor="#202020" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearL1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:text="Gender :"
+        android:textColor="#202020"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/LinearL1"
+        android:layout_below="@id/tv_gender"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
