@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
         android:text="Question 7"
-        android:id="@+id/tv_text"
-        android:layout_margin="10dp"
         android:textAlignment="center"
         android:textColor="#48cae4"
         android:textSize="20sp"
@@ -118,15 +119,6 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/control_linear_layout"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="10dp" />
 
 
 

@@ -44,10 +44,6 @@ public class MainActivity extends AppCompatActivity {
     Handler handler = new Handler();
     Runnable runnable;
 
-    ListView songListView;
-    ArrayAdapter<String> adapter;
-    ArrayList<String> audioList;
-    Uri SongName;
 
 
     @Override
@@ -63,46 +59,6 @@ public class MainActivity extends AppCompatActivity {
         play_btn = findViewById(R.id.play);
         pause_btn = findViewById(R.id.pause);
 
-
-        //songList code
-
-        songListView = (ListView) findViewById(R.id.listView);
-        audioList = new ArrayList<>();
-
-        String[] proj = { MediaStore.Audio.Media._ID,MediaStore.Audio.Media.DISPLAY_NAME };
-        Cursor audioCursor = getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, proj, null, null, null);
-
-
-        if(audioCursor != null){
-            if(audioCursor.moveToFirst()){
-                do{
-                    int audioIndex = audioCursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME);
-
-                    audioList.add(audioCursor.getString(audioIndex));
-                }while(audioCursor.moveToNext());
-            }
-        }
-        audioCursor.close();
-
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1, audioList){
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view = super.getView(position, convertView, parent);
-                TextView ListItemShow = (TextView) view.findViewById(android.R.id.text1);
-                ListItemShow.setTextColor(Color.parseColor("#ffffff"));
-                return view;
-            }
-        };
-        songListView.setAdapter(adapter);
-
-        songListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Uri MusicUri= android.provider.MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-                SongName = MusicUri;
-                mediaPlayer = MediaPlayer.create(getApplicationContext(),MusicUri);
-            }
-        });
 
         //Player Code
 
