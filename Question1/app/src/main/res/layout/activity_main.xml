@@ -71,10 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_Passwd"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="0dp"
         android:text="Course :"
         android:textColor="#202020"
         android:textStyle="bold" />
@@ -85,36 +83,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_course"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <CheckBox
             android:id="@+id/cbBCA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="BCA"
-            android:textColor="#202020" />
+            android:layout_margin="10dp"
+            android:text="BCA" />
 
         <CheckBox
             android:id="@+id/cbBSC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="BSC IT"
-            android:textColor="#202020" />
+            android:layout_margin="10dp"
+            android:text="BSC IT" />
 
         <CheckBox
             android:id="@+id/cbBTECH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="BTech"
-            android:textColor="#202020" />
+            android:layout_margin="10dp"
+            android:text="BTech" />
 
     </LinearLayout>
 
@@ -133,41 +124,31 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_gender"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/rb_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_margin="10dp"
             android:text="Male" />
 
         <RadioButton
             android:id="@+id/rb_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_margin="10dp"
             android:text="Female" />
 
         <RadioButton
             android:id="@+id/rb_others"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_margin="10dp"
             android:text="Other" />
 
     </RadioGroup>
@@ -177,11 +158,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/radioGroup"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_margin="15dp"
         android:background="#8f3b76"
-        android:text="Submit"
+        android:text="Register"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
