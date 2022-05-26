@@ -28,13 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 String user = et_Username.getText().toString().trim();
                 String passwd = et_Passwd.getText().toString().trim();
 
-                if (TextUtils.isEmpty(user)){
-                    et_Username.setError("Fill This");
-                }
-                if (TextUtils.isEmpty(passwd)){
-                    et_Passwd.setError("Fill This");
-                }
-
                 Intent intent = new Intent(MainActivity.this,resultActivity.class);
                 intent.putExtra("Key",user);
                 intent.putExtra("value",passwd);

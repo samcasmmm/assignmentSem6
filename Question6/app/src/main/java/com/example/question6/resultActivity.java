@@ -17,7 +17,7 @@ public class resultActivity extends AppCompatActivity {
 
         String text1 = getIntent().getStringExtra("Key");
         String text2 = getIntent().getStringExtra("value");
-        tv_username.setText(text1);
-        tv_Passwd.setText(text2);
+        tv_username.setText("UserName : "+text1);
+        tv_Passwd.setText("Password : "+text2);
     }
 }
