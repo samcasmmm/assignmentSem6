@@ -4,30 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="click"
-        android:onClick="showToast"
-        tools:ignore="UsingOnClickInXml" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Login"
-        android:id=""
-        android:layout_below="@+id/btn"/>
-
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_below="@+id/"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Question 1 - Shaurya Chawan"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/header"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/et_Passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_Username"/>
+
+    <LinearLayout
+        android:id="@+id/firstLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/et_Passwd"
+        android:layout_centerHorizontal="true">
+
+        <CheckBox
+            android:id="@+id/cb_Web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Web Devlopment" />
+
+        <CheckBox
+            android:id="@+id/cb_Android"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="Android Devlopment" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLL"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rb_Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/rb_Female"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Register" />
 
 </RelativeLayout>

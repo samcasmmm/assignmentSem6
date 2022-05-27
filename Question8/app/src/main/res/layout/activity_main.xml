@@ -6,56 +6,28 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView0"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Question 8"
-        android:textColor="#8f3b76"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Name"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText_name"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/textView1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="150dp"
         android:background="#202020"
+        android:hint="Username"
+        android:textColorHint="#FFFFFF"
         android:padding="5dp"
         android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/editText_name"
-        android:text="Phone"
-        android:padding="5dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText_phone"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/textView2"
+        android:layout_below="@id/editText_name"
         android:background="#202020"
         android:padding="5dp"
+        android:hint="Phone"
+        android:textColorHint="#FFFFFF"
         android:inputType="number"
         android:layout_marginTop="10dp"
         android:textColor="#FFFFFF" />
@@ -66,31 +38,25 @@
         android:layout_below="@id/editText_phone"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button_add"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
+            android:layout_margin="5dp"
             android:background="#8f3b76"
-            android:text="Add Data" />
+            android:text="Add Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_viewAll"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_margin="5dp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:background="#8f3b76"

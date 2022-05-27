@@ -7,119 +7,23 @@
     android:background="#202020"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
-        android:text="Question 7"
-        android:textAlignment="center"
-        android:textColor="#48cae4"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/iv_pic"
-        android:layout_below="@+id/tv_text"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:src="@drawable/musicalnote" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:id="@+id/linear_seekbar_layout"
-        android:layout_below="@id/iv_pic"
-        android:padding="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/playerPosition"
-            android:text="00:00"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
-        <SeekBar
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/seekbar"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/playDuration"
-            android:text="00:00"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/control_linear_layout"
-        android:layout_below="@id/linear_seekbar_layout"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="15dp">
-
-        <ImageView
-            android:id="@+id/rewind"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
-            android:src="@drawable/fast_rewind"
-            app:tint="#48cae4" />
-
         <ImageView
             android:id="@+id/play"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
             android:src="@drawable/play"
-
             app:tint="#48cae4" />
 
         <ImageView
             android:id="@+id/pause"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
             android:visibility="gone"
             android:src="@drawable/pause"
-
             app:tint="#48cae4" />
-
-        <ImageView
-            android:id="@+id/forward"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:padding="10dp"
-            android:src="@drawable/fast_forward"
-            app:tint="#48cae4" />
-
-    </LinearLayout>
-
-
-
 
 </RelativeLayout>
